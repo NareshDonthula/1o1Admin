@@ -11,4 +11,5 @@ import lombok.Data;
 public class MultipleMongoProperties {
     private MongoProperties user = new MongoProperties();
 	private MongoProperties trainer = new MongoProperties();
+	private MongoProperties trainee = new MongoProperties();
 }

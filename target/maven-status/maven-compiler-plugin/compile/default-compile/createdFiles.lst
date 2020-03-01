@@ -1,7 +1,10 @@
 com/app/admin_1o1/MultipleMongoProperties.class
 com/app/admin_1o1/Admin1o1Application.class
+com/app/admin_1o1/trainee/repo/TraineeImpl.class
 com/app/admin_1o1/model/CalenderModal.class
+com/app/admin_1o1/model/TraineeModal.class
 com/app/admin_1o1/model/UserModel.class
+com/app/admin_1o1/controller/TraineeController.class
 com/app/admin_1o1/model/TrainerModel.class
 com/app/admin_1o1/controller/CalendarController.class
 com/app/admin_1o1/repo/User.class
@@ -11,6 +14,7 @@ com/app/admin_1o1/TrainerMongoConfig.class
 com/app/admin_1o1/controller/WorkoutController.class
 com/app/admin_1o1/controller/UserRoleController.class
 com/app/admin_1o1/controller/ProgramController.class
+com/app/admin_1o1/trainee/repo/Trainee.class
 com/app/admin_1o1/trainer/repo/Workout.class
 com/app/admin_1o1/trainer/repo/TrainerImpl.class
 com/app/admin_1o1/trainer/repo/Exercise.class
@@ -30,9 +34,11 @@ com/app/admin_1o1/trainer/repo/Calendar.class
 com/app/admin_1o1/model/RoleModel.class
 com/app/admin_1o1/trainer/repo/ProgramImpl.class
 com/app/admin_1o1/trainer/repo/ExerciseImpl.class
+com/app/admin_1o1/trainee/repo/TraineeRepository.class
 com/app/admin_1o1/controller/ExerciseController.class
 com/app/admin_1o1/trainer/repo/WoekoutImpl.class
 com/app/admin_1o1/trainer/repo/ProgramRepository.class
+com/app/admin_1o1/TraineeMongoConfig.class
 com/app/admin_1o1/model/ExerciseModal.class
 com/app/admin_1o1/model/WorkoutModal.class
 com/app/admin_1o1/controller/TrainerController.class

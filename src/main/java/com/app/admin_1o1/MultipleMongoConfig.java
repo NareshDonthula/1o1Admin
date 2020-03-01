@@ -2,6 +2,7 @@ package com.app.admin_1o1;
 
 import org.springframework.boot.autoconfigure.mongo.MongoProperties;
 
+
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,6 +31,11 @@ public class MultipleMongoConfig {
 	public MongoTemplate trainerMongoTemplate() throws Exception {
 		return new MongoTemplate(secondaryFactory(this.multipleMongoProperties.getTrainer()));
 	}
+	
+	@Bean(name = "traineeMongoTemplate")
+	public MongoTemplate traineeMongoTemplate() throws Exception {
+		return new MongoTemplate(traineeFactory(this.multipleMongoProperties.getTrainee()));
+	}
 
 	@Bean
 	@Primary
@@ -41,4 +47,10 @@ public class MultipleMongoConfig {
 	public MongoDbFactory secondaryFactory(final MongoProperties mongo) throws Exception {
 		return new SimpleMongoDbFactory(new MongoClient(mongo.getHost(), mongo.getPort()), mongo.getDatabase());
 	}
+	
+	@Bean
+	public MongoDbFactory traineeFactory(final MongoProperties mongo) throws Exception {
+		return new SimpleMongoDbFactory(new MongoClient(mongo.getHost(), mongo.getPort()), mongo.getDatabase());
+	}
+	
 }
